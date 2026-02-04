@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KSHARER | Knowledge Sharing</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/htmx.org@1.9.10"></script>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.min.js"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@700;800&display=swap"
+        rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .brand-font {
+            font-family: 'Manrope', sans-serif;
+        }
+
+        [x-cloak] {
+            display: none !important;
+        }
+
+        .content-area {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .scrollbar-hide::-webkit-scrollbar {
+            display: none;
+        }
+
+        .scrollbar-hide {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+
+</head>
+
+<body class="bg-gray-50 text-gray-900 dark:bg-gray-900 dark:text-gray-100">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&family=Manrope:wght@800&display=swap"
+        rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .brand-font {
+            font-family: 'Manrope', sans-serif;
+        }
+
+        [x-cloak] {
+            display: none !important;
+        }
+    </style>
+
+    <div class="bg-white min-h-screen font-[Inter] pb-20">
+    
+        <div class="bg-slate-900 pt-24 pb-12 px-4 md:px-6">
+            <div class="max-w-7xl mx-auto">
+    
+                <div class="flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-slate-400 mb-6">
+                    <a href="#" class="hover:text-[#198754]">Island</a>
+                    <i data-lucide="chevron-right" class="w-3 h-3"></i>
+                    <a href="#" class="hover:text-[#198754]">Energy Systems</a>
+                    <i data-lucide="chevron-right" class="w-3 h-3"></i>
+                    <span class="text-white">Solar Storage</span>
+                </div>
+    
+                <div
+                    class="relative aspect-video bg-black rounded-3xl overflow-hidden shadow-2xl border border-slate-700 group">
+                    <img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?q=80&w=2072&auto=format&fit=crop"
+                        class="w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform duration-700">
+    
+                    <div class="absolute inset-0 flex items-center justify-center">
+                        <button
+                            class="w-20 h-20 bg-[#198754] rounded-full flex items-center justify-center text-white pl-1 hover:scale-110 hover:shadow-[0_0_30px_rgba(25,135,84,0.6)] transition-all duration-300">
+                            <i data-lucide="play" class="w-8 h-8 fill-current"></i>
+                        </button>
+                    </div>
+    
+                    <div class="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/90 to-transparent">
+                        <div class="flex items-center gap-3">
+                            <span
+                                class="px-2 py-1 bg-white/20 backdrop-blur text-white text-[10px] font-bold uppercase rounded">Preview
+                                Mode</span>
+                            <span class="text-slate-300 text-xs font-medium">02:15 / 45:00 Locked</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="max-w-7xl mx-auto px-4 md:px-6 -mt-8 relative z-10">
+            <div class="grid lg:grid-cols-3 gap-12">
+    
+                <div class="lg:col-span-2 space-y-8">
+    
+                    <div class="bg-white p-8 rounded-3xl border border-slate-100 shadow-sm">
+                        <h1 class="brand-font text-3xl md:text-4xl font-extrabold text-slate-900 mb-4 leading-tight">
+                            Optimizing Lithium-Ion Cycling for Tropical Climates
+                        </h1>
+    
+                        <div
+                            class="flex flex-wrap items-center gap-6 text-sm text-slate-500 pb-6 border-b border-slate-100">
+                            <div class="flex items-center gap-2">
+                                <img src="https://via.placeholder.com/40"
+                                    class="w-8 h-8 rounded-full border border-slate-200">
+                                <span class="font-bold text-slate-900">Dr. Aris Thorne</span>
+                                <i data-lucide="badge-check" class="w-4 h-4 text-[#198754]"></i>
+                            </div>
+                            <span class="flex items-center gap-2"><i data-lucide="calendar" class="w-4 h-4"></i> Oct 12,
+                                2025</span>
+                            <span class="flex items-center gap-2"><i data-lucide="eye" class="w-4 h-4"></i> 12.5k
+                                Views</span>
+                        </div>
+    
+                        <div class="pt-6">
+                            <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-3">Description</h3>
+                            <p class="text-slate-700 leading-relaxed text-lg">
+                                Standard battery management systems (BMS) often fail in high-humidity, high-heat
+                                environments typical of the equator. In this blueprint, we deconstruct the "Cool-Loop"
+                                logic—a software-defined cooling method that extends battery life by 40% without additional
+                                hardware.
+                            </p>
+                        </div>
+    
+                        <div class="mt-6 flex flex-wrap gap-2">
+                            <span
+                                class="px-3 py-1.5 bg-slate-100 rounded-lg text-xs font-bold text-slate-600">#HardwareEngineering</span>
+                            <span
+                                class="px-3 py-1.5 bg-slate-100 rounded-lg text-xs font-bold text-slate-600">#SustainableTech</span>
+                            <span
+                                class="px-3 py-1.5 bg-slate-100 rounded-lg text-xs font-bold text-slate-600">#TropicalInfrastructure</span>
+                        </div>
+                    </div>
+    
+                    <div class="bg-white rounded-3xl border border-slate-100 overflow-hidden">
+                        <div class="p-6 bg-slate-50 border-b border-slate-100">
+                            <h3 class="font-bold text-slate-900">Blueprint Contents</h3>
+                        </div>
+                        <div class="divide-y divide-slate-100">
+                            <div class="p-4 flex items-center justify-between hover:bg-slate-50 transition cursor-pointer">
+                                <div class="flex items-center gap-4">
+                                    <div
+                                        class="w-8 h-8 rounded-full bg-[#198754]/10 flex items-center justify-center text-[#198754] font-bold text-xs">
+                                        01</div>
+                                    <span class="font-medium text-slate-700">The Heat Problem: Data Analysis</span>
+                                </div>
+                                <span class="text-xs font-bold text-[#198754]">Free Preview</span>
+                            </div>
+                            <div
+                                class="p-4 flex items-center justify-between hover:bg-slate-50 transition cursor-pointer opacity-60">
+                                <div class="flex items-center gap-4">
+                                    <div
+                                        class="w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center text-slate-400 font-bold text-xs">
+                                        <i data-lucide="lock" class="w-3 h-3"></i></div>
+                                    <span class="font-medium text-slate-700">Code Structure for BMS</span>
+                                </div>
+                                <span class="text-xs font-bold text-slate-400">15:00</span>
+                            </div>
+                            <div
+                                class="p-4 flex items-center justify-between hover:bg-slate-50 transition cursor-pointer opacity-60">
+                                <div class="flex items-center gap-4">
+                                    <div
+                                        class="w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center text-slate-400 font-bold text-xs">
+                                        <i data-lucide="lock" class="w-3 h-3"></i></div>
+                                    <span class="font-medium text-slate-700">Downloadable Schematics (PDF)</span>
+                                </div>
+                                <span class="text-xs font-bold text-slate-400">2.4 MB</span>
+                            </div>
+                        </div>
+                    </div>
+    
+                </div>
+    
+                <div class="lg:col-span-1">
+                    <div class="sticky top-24 space-y-6">
+    
+                        <div
+                            class="bg-white p-6 rounded-3xl border-2 border-[#198754]/10 shadow-xl shadow-green-900/5 relative overflow-hidden">
+                            <div class="absolute top-0 left-0 right-0 h-1 bg-[#198754]"></div>
+    
+                            <div class="flex justify-between items-start mb-4">
+                                <div>
+                                    <p class="text-xs font-bold text-slate-400 uppercase tracking-wider">Access Value</p>
+                                    <div class="flex items-baseline gap-1">
+                                        <span class="text-3xl font-black text-slate-900 font-[Manrope]">45</span>
+                                        <span class="text-sm font-bold text-[#198754]">Zini</span>
+                                    </div>
+                                </div>
+                                <div class="px-3 py-1 bg-green-50 text-[#198754] rounded-lg text-xs font-bold uppercase">
+                                    Instant Access
+                                </div>
+                            </div>
+    
+                            <ul class="space-y-3 mb-8">
+                                <li class="flex items-start gap-3 text-sm text-slate-600">
+                                    <i data-lucide="check-circle" class="w-5 h-5 text-[#198754] shrink-0"></i>
+                                    <span>Full 45min Video Workshop</span>
+                                </li>
+                                <li class="flex items-start gap-3 text-sm text-slate-600">
+                                    <i data-lucide="check-circle" class="w-5 h-5 text-[#198754] shrink-0"></i>
+                                    <span>Downloadable Python Scripts</span>
+                                </li>
+                                <li class="flex items-start gap-3 text-sm text-slate-600">
+                                    <i data-lucide="check-circle" class="w-5 h-5 text-[#198754] shrink-0"></i>
+                                    <span>Direct Q&A with Author</span>
+                                </li>
+                            </ul>
+    
+                            <button
+                                class="w-full py-4 bg-[#198754] text-white rounded-xl font-bold text-sm uppercase tracking-widest hover:bg-[#157347] shadow-lg shadow-green-100 transition-all flex items-center justify-center gap-2">
+                                Unlock Now <i data-lucide="unlock" class="w-4 h-4"></i>
+                            </button>
+    
+                            <p class="text-center mt-4 text-[10px] text-slate-400 font-medium">
+                                Balance: 120 Zini • <a href="#" class="underline hover:text-slate-600">Top Up</a>
+                            </p>
+                        </div>
+    
+                        <div class="bg-slate-50 p-6 rounded-3xl border border-slate-100">
+                            <h4 class="text-xs font-black uppercase tracking-widest text-slate-400 mb-4">About the Author
+                            </h4>
+                            <div class="flex items-center gap-4 mb-4">
+                                <img src="https://via.placeholder.com/60"
+                                    class="w-14 h-14 rounded-full border-2 border-white shadow-sm">
+                                <div>
+                                    <h4 class="font-bold text-slate-900">Dr. Aris Thorne</h4>
+                                    <p class="text-xs text-slate-500">Snr. Energy Architect</p>
+                                </div>
+                            </div>
+                            <p class="text-sm text-slate-600 mb-4">
+                                Leading the charge on decentralized grid systems at LightMann. Focuses on pragmatic,
+                                low-cost deployments.
+                            </p>
+                            <button
+                                class="w-full py-2 bg-white border border-slate-200 text-slate-900 rounded-lg text-xs font-bold uppercase hover:bg-slate-100 transition">
+                                View Full Profile
+                            </button>
+                        </div>
+    
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+    
+    </div>
+    
+    <script>lucide.createIcons();</script>
+
+</body>
+
+</html>
